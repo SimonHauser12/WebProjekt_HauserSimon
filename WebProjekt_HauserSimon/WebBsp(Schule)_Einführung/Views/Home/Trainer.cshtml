@@ -1,0 +1,47 @@
+﻿@using Hauser_WebProjekt.Models
+@model List<Trainer>
+
+@{
+    ViewData["Title"] = "Trainer";
+}
+
+@if ((Model == null || Model.Count == 0))
+{
+    <p>
+        Es sind keine Trainer vorhanden.
+    </p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <td>Trainer</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>TrainerID</th>
+                <th>Name</th>
+                <th>Spezialisierung</th>
+                <th>Stundenpreis</th>
+            </tr>
+            @foreach (Trainer a in Model)
+            {
+                <tr>
+                    <td>@a.TrainerID</td>
+                    <td>@a.Name</td>
+                    <td>@a.Spezialisierung</td>
+                    <td>@a.StundenPreis</td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan=5>
+                    alle unsere Trainer
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+}
