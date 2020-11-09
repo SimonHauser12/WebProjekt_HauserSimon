@@ -14,6 +14,16 @@ namespace Hauser_WebProjekt.Controllers
             return View();
         }
 
+        public IActionResult Anmeldung()
+        {
+            return View();
+        }
+
+        public IActionResult AnmeldungReturn()
+        {
+            return View();
+        }
+
         public IActionResult Anbieterkennzeichnung()
         {
             return View();

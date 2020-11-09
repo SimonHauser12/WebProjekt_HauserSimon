@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\SimonHTL\\Programmieren\\C# - Vogt\\Web\\WebProjekt\\WebProjekt_HauserSimon\\WebBsp(Schule)_Einführung\\Hauser_WebProjekt.csproj": {}
+    "D:\\SimonHTL\\Programmieren\\C# - Vogt\\WebProjekt_HauserSimon\\WebProjekt_HauserSimon\\WebBsp(Schule)_Einführung\\Hauser_WebProjekt.csproj": {}
   },
   "projects": {
-    "D:\\SimonHTL\\Programmieren\\C# - Vogt\\Web\\WebProjekt\\WebProjekt_HauserSimon\\WebBsp(Schule)_Einführung\\Hauser_WebProjekt.csproj": {
+    "D:\\SimonHTL\\Programmieren\\C# - Vogt\\WebProjekt_HauserSimon\\WebProjekt_HauserSimon\\WebBsp(Schule)_Einführung\\Hauser_WebProjekt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\SimonHTL\\Programmieren\\C# - Vogt\\Web\\WebProjekt\\WebProjekt_HauserSimon\\WebBsp(Schule)_Einführung\\Hauser_WebProjekt.csproj",
+        "projectUniqueName": "D:\\SimonHTL\\Programmieren\\C# - Vogt\\WebProjekt_HauserSimon\\WebProjekt_HauserSimon\\WebBsp(Schule)_Einführung\\Hauser_WebProjekt.csproj",
         "projectName": "Hauser_WebProjekt",
-        "projectPath": "D:\\SimonHTL\\Programmieren\\C# - Vogt\\Web\\WebProjekt\\WebProjekt_HauserSimon\\WebBsp(Schule)_Einführung\\Hauser_WebProjekt.csproj",
+        "projectPath": "D:\\SimonHTL\\Programmieren\\C# - Vogt\\WebProjekt_HauserSimon\\WebProjekt_HauserSimon\\WebBsp(Schule)_Einführung\\Hauser_WebProjekt.csproj",
         "packagesPath": "C:\\Users\\tobia\\.nuget\\packages\\",
-        "outputPath": "D:\\SimonHTL\\Programmieren\\C# - Vogt\\Web\\WebProjekt\\WebProjekt_HauserSimon\\WebBsp(Schule)_Einführung\\obj\\",
+        "outputPath": "D:\\SimonHTL\\Programmieren\\C# - Vogt\\WebProjekt_HauserSimon\\WebProjekt_HauserSimon\\WebBsp(Schule)_Einführung\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -42,6 +42,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.0.0, )"
