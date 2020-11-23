@@ -10,21 +10,11 @@ namespace Hauser_WebProjekt.Models
 {
     public class Artikel
     {
-        private decimal _preis;
         public int ArtikelID { get; set; }
 
         public string ArtikelName { get; set; }
-        public decimal Preis
-        {
-            get { return this._preis; }
-            set
-            {
-                if (value >= 0.0m)
-                {
-                    this._preis = value;
-                }
-            }
-        }
+
+        public decimal Preis { get; set; }
 
         public string Beschreibung { get; set; }
 

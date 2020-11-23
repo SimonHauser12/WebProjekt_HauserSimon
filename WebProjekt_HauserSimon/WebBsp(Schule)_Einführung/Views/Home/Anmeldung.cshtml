@@ -1,45 +1,43 @@
-﻿
+﻿@using Hauser_WebProjekt.Models
+@model List<Anmeldung>
+
 @{
     ViewData["Title"] = "Anmeldung";
 }
 
-<h1>Anmeldung - Fitnessprogramm</h1>
 
-<form action="/home/anmeldungReturn" method="post">
-    <label for="firstname">Vorname</label>
-    <input type="text" id="firstname" name="firstname" /></br>
-    <label for="lastname">Nachname</label>
-    <input type="text" id="lastname" name="lastname" /></br>
-    </br>
-    <label for="">Geschlecht</label></br>
-    <input type="radio" id="gender" name="gender" value="male" />männlich</br>
-    <input type="radio" id="gender" name="gender" value="female" />weiblich</br>
-    <input type="radio" id="gender" name="gender" value="notSpecified" />nicht angegeben</br>
-    </br>
-    <label for="zusaetze">Zusätze</label></br>
-    <input type="checkbox" id="zusaetze" name="zusaetze" value="2jahresabo" />2 Jahres-Abo</br>
-    <input type="checkbox" id="zusaetze" name="zusaetze" value="wellness-Paket" />Wellness</br>
-    <input type="checkbox" id="zusaetze" name="zusaetze" value="sauna" />Sauna</br>
-    <input type="checkbox" id="zusaetze" name="zusaetze" value="personaltrainer" />Personal Trainer</br>
-    </br>
-    <label for="color2">gratis T-Shirt</label>
-    <input type="color" id="color2" name="color2" /></br>
-    </br>
-    <label for="mail">E-Mail</label>
-    <input type="email" id="mail" name="mail" /></br>
-    </br>
-    <label for="date">Geburtsdatum</label></br>
-    <input type="date" id="date" name="date" /></br>
-    </br>
-    <label for="age">Alter</label></br>
-    <input type="number" id="age" name="age" /></br>
-    </br>
-    <label for="pwd">Passwort</label></br>
-    <input type="password" id="pwd" name="pwd" /></br>
-    </br>
-    <input type="submit" value="anmelden" />
-    <input type="reset" value="löschen" /></br>
-
-
-</form>
-
+@if ((Model == null || Model.Count == 0))
+{
+    <p>
+        Es sind keine Anmeldungen vorhanden.
+    </p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <td>Erfolgreich registriert!</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Vorname</th>
+                <th>Nachname</th>
+                <th>EMail</th>
+                <th>Alter</th>
+            </tr>
+            @foreach (Anmeldung a in Model)
+            {
+            <tr>
+                <td>@a.Vorname</td>
+                <td>@a.Nachname</td>
+                <td>@a.EMail</td>
+                <td>@a.Alter</td>
+            </tr>
+            }
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+}

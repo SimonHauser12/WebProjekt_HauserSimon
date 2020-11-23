@@ -14,16 +14,6 @@ namespace Hauser_WebProjekt.Controllers
             return View();
         }
 
-        public IActionResult Anmeldung()
-        {
-            return View();
-        }
-
-        public IActionResult AnmeldungReturn()
-        {
-            return View();
-        }
-
         public IActionResult Anbieterkennzeichnung()
         {
             return View();
@@ -39,6 +29,53 @@ namespace Hauser_WebProjekt.Controllers
             return View(CreateArticleList());
         }
 
+        public IActionResult NeueAnmeldung()
+        {
+            return View();
+        }
+
+        public IActionResult Anmeldung(Anmeldung a)
+        {
+            return View(CreateRegisterList(a));
+        }
+
+        /*private void DatenCheck(Anmeldung a)
+        {
+            if (a == null)
+            {
+                return;
+            }
+
+            a.Vorname = a.Vorname ?? "";
+            a.Nachname = a.Nachname ?? "";
+            a.Geschlecht = a.Geschlecht ?? "";
+            a.Zusaetze = a.Zusaetze ?? "";
+            a.EMail = a.EMail ?? "";
+            a.Geburtsdatum = a.Geburtsdatum ?? null;
+            a.Password = a.Password ?? "";
+
+            
+            if ((a.Vorname.Length < 3)||(a.Nachname.Length < 3))
+            {
+                ModelState.AddModelError(nameof(a.Nachname), "Vor- und Nachname müssen mind. 3 Zeichen lang sein!");
+            }
+            
+            if (a.Geburtsdatum > new DateTime(2020, 1, 1))
+            {
+                ModelState.AddModelError(nameof(a.Geburtsdatum), "Geburtsdatum muss kleiner als 1.1.2020 sein!");
+            }
+
+            if (a.Alter < 0)
+            {
+                ModelState.AddModelError(nameof(a.Alter), "Alter darf nicht kleiner als 0 sein!");
+            }
+
+            if (a.Password.Length < 6)
+            {
+                ModelState.AddModelError(nameof(a.Password), "Das PW muss mind. 6 Zeichen lang sein!");
+            }
+        }*/
+
         private List<Trainer> CreateArticleList()
         {
             return new List<Trainer>()
@@ -49,6 +86,14 @@ namespace Hauser_WebProjekt.Controllers
                 new Trainer(4, "Günther Einstein", "Ernährung(Ausdauersport)", 10.50m),
                 new Trainer(5, "Max Post", "Kraft- und Ausdauersport", 12.90m),
                 new Trainer(6, "Lea Haus", "Kraft- und Ausdauersport", 9.50m),
+            };
+        }
+
+        private List<Anmeldung> CreateRegisterList(Anmeldung a)
+        {
+            return new List<Anmeldung>()
+            {
+                new Anmeldung(a.Vorname, a.Nachname, a.Geschlecht, a.Zusaetze, a.EMail, a.Geburtsdatum, a.Alter, a.Password),
             };
         }
     }

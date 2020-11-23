@@ -553,4 +553,4 @@ D:\SimonHTL\Programmieren\C# - Vogt\WebProjekt_HauserSimon\WebProjekt_HauserSimo
 D:\SimonHTL\Programmieren\C# - Vogt\WebProjekt_HauserSimon\WebProjekt_HauserSimon\WebBsp(Schule)_Einführung\obj\Debug\netcoreapp3.0\Hauser_WebProjekt.csproj.CoreCompileInputs.cache
 D:\SimonHTL\Programmieren\C# - Vogt\WebProjekt_HauserSimon\WebProjekt_HauserSimon\WebBsp(Schule)_Einführung\obj\Debug\netcoreapp3.0\Hauser_WebProjekt.MvcApplicationPartsAssemblyInfo.cs
 D:\SimonHTL\Programmieren\C# - Vogt\WebProjekt_HauserSimon\WebProjekt_HauserSimon\WebBsp(Schule)_Einführung\obj\Debug\netcoreapp3.0\Hauser_WebProjekt.MvcApplicationPartsAssemblyInfo.cache
-D:\SimonHTL\Programmieren\C# - Vogt\WebProjekt_HauserSimon\WebProjekt_HauserSimon\WebBsp(Schule)_Einführung\obj\Debug\netcoreapp3.0\Razor\Views\Home\AnmeldungReturn.cshtml.g.cs
+D:\SimonHTL\Programmieren\C# - Vogt\WebProjekt_HauserSimon\WebProjekt_HauserSimon\WebBsp(Schule)_Einführung\obj\Debug\netcoreapp3.0\Razor\Views\Home\NeueAnmeldung.cshtml.g.cs

@@ -14,19 +14,7 @@ namespace Hauser_WebProjekt.Models
 
         public string Spezialisierung { get; set; }
 
-        private decimal _stundenpreis;
-
-        public decimal StundenPreis
-        {
-            get { return this._stundenpreis; }
-            set
-            {
-                if (value >= 0.0m)
-                {
-                    this._stundenpreis = value;
-                }
-            }
-        }
+        public decimal StundenPreis { get; set; }
 
         public Trainer() : this(0, "", "", 0.0m) { }
         public Trainer(int trainerID, string name, string spezialisierung, decimal stundenpreis)

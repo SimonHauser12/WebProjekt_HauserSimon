@@ -1,0 +1,98 @@
+﻿@model Hauser_WebProjekt.Models.Anmeldung
+
+@{
+    ViewData["Title"] = "NeueAnmeldung";
+}
+
+<h1>Neue Anmeldung - Fitnessprogramm</h1>
+
+<form asp-controller="home" asp-action="anmeldung" method="post">
+
+    <lable asp-for="Vorname">Vorname*</label></br>
+    <input asp-for="Vorname" type="text"/>
+    <span asp-validation-for="Vorname" class="text-danger" style="font-size: 85%"></span></br>
+    <lable asp-for="Nachname">Nachname*</label></br>
+    <input asp-for="Nachname" type="text"/>
+    <span asp-validation-for="Nachname" class="text-danger" style="font-size: 85%"></span></br>
+    </br>
+    <lable asp-for="Geschlecht">Geschlecht</lable></br>
+    <input asp-for="Geschlecht" type="radio" value="male"/>männlich
+    <span asp-validation-for="Geschlecht" class="text-danger" style="font-size: 85%"></span></br>
+    <input asp-for="Geschlecht" type="radio" value="female"/>weiblich
+    <span asp-validation-for="Geschlecht" class="text-danger" style="font-size: 85%"></span></br>
+    <input asp-for="Geschlecht" type="radio" value="notSpecified"/>nicht angegeben
+    <span asp-validation-for="Geschlecht" class="text-danger" style="font-size: 85%"></span></br>
+    </br>
+    <lable asp-for="Zusaetze">Zusätze</lable></br>
+    <input asp-for="Zusaetze" type="checkbox"/>2 Jahres-Abo
+    <span asp-validation-for="Zusaetze" class="text-danger" style="font-size: 85%"></span></br>
+    <input asp-for="Zusaetze" type="checkbox"/>Wellness
+    <span asp-validation-for="Zusaetze" class="text-danger" style="font-size: 85%"></span></br>
+    <input asp-for="Zusaetze" type="checkbox"/>Sauna
+    <span asp-validation-for="Zusaetze" class="text-danger" style="font-size: 85%"></span></br>
+    <input asp-for="Zusaetze" type="checkbox"/>Personal Trainer
+    <span asp-validation-for="Zusaetze" class="text-danger" style="font-size: 85%"></span></br>
+    </br>
+    <lable asp-for="EMail">EMail*</lable></br>
+    <input asp-for="EMail" type="email" />
+    <span asp-validation-for="EMail" class="text-danger" style="font-size: 85%"></span><br />
+    </br>
+    <lable asp-for="Geburtsdatum">Geburtsdatum*</lable></br>
+    <input asp-for="Geburtsdatum" type="date" />
+    <span asp-validation-for="Geburtsdatum" class="text-danger" style="font-size: 85%"></span><br />
+    </br>
+    <lable asp-for="Alter">Alter*</lable></br>
+    <input asp-for="Alter" type="number" /><
+    <span asp-validation-for="Alter" class="text-danger" style="font-size: 85%"></span><br />
+    </br>
+    <lable asp-for="Password">Password*</lable></br>
+    <input asp-for="Password" type="password" />
+    <span asp-validation-for="Password" class="text-danger" style="font-size: 85%"></span><br />
+    </br>
+    <input type="submit" value="anmelden" />
+    <input type="reset" value="abbrechen" />
+</form>
+
+<!--<form action="/home/Anmeldung" method="post">
+    <label for="firstname">Vorname*</label>
+    <input type="text" id="firstname" name="firstname" /><br/>
+    <label for="lastname">Nachname*</label>
+    <input type="text" id="lastname" name="lastname" /><br/>
+    <br/>
+    <label for="">Geschlecht</label><br/>
+    <input type="radio" id="gender" name="gender" value="male" />männlich<br/>
+    <input type="radio" id="gender" name="gender" value="female" />weiblich<br/>
+    <input type="radio" id="gender" name="gender" value="notSpecified" />nicht angegeben<br/>
+    <br/>
+    <label for="zusaetze">Zusätze</label><br/>
+    <input type="checkbox" id="zusaetze" name="zusaetze" value="2jahresabo" />2 Jahres-Abo<br/>
+    <input type="checkbox" id="zusaetze" name="zusaetze" value="wellness-Paket" />Wellness<br/>
+    <input type="checkbox" id="zusaetze" name="zusaetze" value="sauna" />Sauna<br/>
+    <input type="checkbox" id="zusaetze" name="zusaetze" value="personaltrainer" />Personal Trainer<br/>
+    <br/>
+    <label for="mail">E-Mail*</label>
+    <input type="email" id="mail" name="mail" /><br/>
+    <br/>
+    <label for="date">Geburtsdatum*</label><br/>
+    <input type="date" id="date" name="date" /><br/>
+    <br/>
+    <label for="age">Alter*</label><br/>
+    <input type="number" id="age" name="age" /><br/>
+    <br/>
+    <label for="pwd">Passwort*</label><br/>
+    <input type="password" id="pwd" name="pwd" /><br/>
+    <br/>
+    <input type="submit" value="anmelden" />
+    <input type="reset" value="löschen" /><br/>
+
+    <lable asp-for="Category">Kategorie*</lable><br />
+    <select asp-for="Category">
+        <option value="notSpecified">bitte auswählen</option>
+        <option value="Books">Bücher</option>
+        <option value="Computers">Computer</option>
+        <option value="Technics">Technik</option>
+        <option value="Handys">Handys</option>
+    </select><br />
+    <span asp-validation-for="Category" class="text-danger" style="font-size: 85%"></span><br />
+</form>-->
+
